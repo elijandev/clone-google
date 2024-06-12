@@ -1,0 +1,185 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul li{
+  list-style: none;
+}
+nav a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+main{height: 100vh;
+min-width: 400px;}
+/* ---------header-------- */
+header{
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;  
+
+}
+nav{
+ width:  22%;
+ max-width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  text-align: center;
+}
+nav .menu{
+
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .menu:hover{
+  background-color: rgba(0, 0, 0, 0.07);
+  width: 32px;
+  height: 32px;
+ overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img{
+  width: 42px;
+  border-radius: 50%;
+}
+.menu img{
+  width: 20px;
+  margin: auto;
+}
+
+.links-row{
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  padding: 10px;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+background: rgba(0, 0, 0, 0.01) ;
+overflow-y: scroll;
+border: 8px solid rgba(0, 0, 0, 0.12);
+border-bottom: none;
+}
+.hide{
+  display: none;
+}
+.links-icons ul{
+
+  position: relative;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.links-icons ul li{
+
+  border-radius: 10px;
+  font-size: 12px;
+  margin: auto;
+  object-fit: cover;
+}
+ul li a{
+  display: inline-block;
+}
+.links-icons ul li:hover{
+   background: rgba(0, 0, 0, 0.08);
+}
+.links-icons img{
+  margin: auto;
+  width: 36px;
+}
+@media (max-width:960px){
+  .links-row{
+    height: 200px;
+    border-bottom:  8px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media (max-width:960px){
+  nav{
+    width: 200px;
+    font-size: 16px;
+  }
+  nav img{
+    width: 28px;
+  }
+}
+/* --------container--------- */
+.container{
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.image img{
+  width: 220px;
+  margin-bottom: 35px;
+}
+
+
+.search{
+  width:390px;
+  padding:10px ;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input{
+  width: 100%;
+ border: none;
+}
+.search i{
+color: rgba(0, 0, 0, 0.4);
+position: absolute;
+gap: 5px;
+display: block;
+}
+.left{
+  padding: 5px;
+}
+.right{
+  width: 50px;
+} 
+.micro i{
+  top: 10px;
+  right: 35px; 
+}
+.camera i{
+  top: 10px;
+  right: 10px;
+}
+@media (max-width:760px){
+  .container{
+    height: 83%;
+  }
+  .search{
+    width:290px;
+    font-size: 14px;
+  }
+ 
+}
+
+
