@@ -75,10 +75,12 @@ nav img{
   height: 350px;
   border-radius: 8px;
 background: rgba(0, 0, 0, 0.01) ;
-overflow-y: scroll;
+overflow: scroll;
 border: 8px solid rgba(0, 0, 0, 0.12);
 border-bottom: none;
+scrollbar-width: thin;
 }
+
 .hide{
   display: none;
 }
@@ -89,9 +91,10 @@ border-bottom: none;
   right: 15px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .links-icons ul li{
-
+  
   border-radius: 10px;
   font-size: 12px;
   margin: auto;
