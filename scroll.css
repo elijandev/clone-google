@@ -1,0 +1,9 @@
+
+.test{
+  width: 150px;
+  height: 200px;
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+  
+  scrollbar-width: thin;
+}

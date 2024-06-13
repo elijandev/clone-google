@@ -66,6 +66,7 @@ nav img{
 }
 
 .links-row{
+
   width: 100%;
   position: absolute;
   top: 50px;
@@ -75,7 +76,7 @@ nav img{
   height: 350px;
   border-radius: 8px;
 background: rgba(0, 0, 0, 0.01) ;
-overflow: scroll;
+overflow-y: scroll;
 border: 8px solid rgba(0, 0, 0, 0.12);
 border-bottom: none;
 scrollbar-width: thin;
@@ -84,27 +85,40 @@ scrollbar-width: thin;
 .hide{
   display: none;
 }
-.links-icons ul{
 
-  position: relative;
-  top: 10px;
-  right: 15px;
+.links-icons ul{
+  
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin: auto;
+  width: 100%;
+  margin-top: 12px;
+}
+.links-icons ul li a{
+  display: inline-block;
 }
 .links-icons ul li{
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 10px;
   font-size: 12px;
-  margin: auto;
-  object-fit: cover;
+  width: 42px;
+  height: 42px;
+padding: 30px;
 }
 ul li a{
   display: inline-block;
 }
 .links-icons ul li:hover{
    background: rgba(0, 0, 0, 0.08);
+   background-size: cover;
+   
+   flex-basis: 30%;
 }
 .links-icons img{
   margin: auto;
